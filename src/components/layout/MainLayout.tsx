@@ -4,8 +4,9 @@ import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { logOut, useCurrentToken } from "../../redux/features/auth/authSlice";
-import CustomFooter from "./CustomFooter";
+import EndFooter from "./endFooter";
 import logo from "../../assets/icons/icon.png";
+import Copyright from "./Copyright";
 
 const MainLayout = () => {
   const token = useAppSelector(useCurrentToken);
@@ -38,9 +39,10 @@ const MainLayout = () => {
           <Outlet />
         </div>
       </Content>
-      <Footer style={{ textAlign: "center" }}>
-        <CustomFooter />
+      <Footer>
+        <EndFooter />
       </Footer>
+      <Copyright />
     </Layout>
   );
 };
