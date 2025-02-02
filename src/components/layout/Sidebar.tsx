@@ -89,9 +89,9 @@ export default function Sidebar() {
         onClick={() => setCollapsed(!collapsed)}
       >
         {collapsed ? (
-          <RiMenuFold4Fill className="text-4xl text-blue-700" />
+          <RiMenuFold4Fill className="text-4xl text-red-700" />
         ) : (
-          <RiMenuFold3Fill className="text-4xl text-blue-700" />
+          <RiMenuFold3Fill className="text-4xl text-red-700" />
         )}
       </div>
       <Menu

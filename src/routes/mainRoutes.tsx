@@ -16,7 +16,7 @@ const mainRoutes: TUserPaths[] = [
     element: <Home />,
   },
   {
-    name: "All Bicycles",
+    name: "All Books",
     path: "all-products",
     element: <AllProducts />,
   },

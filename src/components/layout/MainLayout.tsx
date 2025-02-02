@@ -19,9 +19,9 @@ const MainLayout = () => {
     <Layout style={{ minHeight: "100%" }}>
       <Header className="px-5 md:px-10">
         <div className="flex justify-around items-center gap-2">
-          <NavLink className="flex items-center gap-1" to="/">
+          <NavLink className="flex items-start gap-1" to="/">
           <img src={logo} alt="logo" className="w-10 h-10 bg-white rounded-full" />
-            <div className="md:text-xl font-bold text-white">Pedal Paradise</div>
+            <div className="md:text-xl font-bold text-white">Koparion Book</div>
           </NavLink>
           <Navbar />
           {token ? (
