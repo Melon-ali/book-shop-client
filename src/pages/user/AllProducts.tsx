@@ -55,13 +55,13 @@ export default function AllProducts() {
   return (
     <div>
       <h1 className="text-center text-4xl mt-20 mb-10 font-bold">
-        All Bicycles
+        All Books
       </h1>
       <div className="flex flex-col md:flex-row justify-between items-center gap-5 mb-10 px-10">
         <div />
         <Search
           className="w-full md:w-[450px]"
-          placeholder="Search bicycles..."
+          placeholder="Search books..."
           enterButton="Search"
           allowClear
           size="large"

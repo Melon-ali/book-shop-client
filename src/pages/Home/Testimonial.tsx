@@ -1,5 +1,6 @@
-import { Rate } from "antd";
+
 import { motion } from "framer-motion";
+import star from '../../assets/star.svg'
 
 const testimonials = [
   {
@@ -61,9 +62,13 @@ export default function Testimonial() {
                   <p className="text-sm text-gray-500">{testimonial.role}</p>
                 </div>
               </div>
-              <div className="mt-4">
-                <Rate disabled defaultValue={testimonial.rating} />
-              </div>
+              <div className="flex mt-2 items-center space-x-1">
+              <img src={star} />
+              <img src={star} />
+              <img src={star} />
+              <img src={star} />
+              <img src={star} />
+            </div>
               <p className="mt-4 text-gray-600 italic">"{testimonial.text}"</p>
             </motion.div>
           ))}
