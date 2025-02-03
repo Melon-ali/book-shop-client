@@ -2,62 +2,61 @@ import {
   CalendarOutlined,
   EnvironmentOutlined,
   TeamOutlined,
-} from "@ant-design/icons";
-import { motion } from "framer-motion";
+} from '@ant-design/icons'
+import { motion } from 'framer-motion'
 
 const events = [
   {
     id: 1,
-    title: "Weekend Mountain Trail",
-    date: "Every Saturday",
-    location: "Blue Mountain Trail",
-    image: "https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=500",
-    participants: "20+",
+    title: 'Beyond the content of the book',
+    date: 'Every Saturday',
+    location: 'Koparion Book Shop',
+    image: 'https://gramentheme.com/html/bookle/assets/img/news/09.jpg',
+    participants: '20+',
     description:
-      "Join our weekly mountain biking adventure. Perfect for intermediate riders looking for thrills!",
+      'The nationality, political persuasion, education, intellectual interests, personal history,!',
   },
   {
     id: 2,
-    title: "City Night Ride",
-    date: "Last Friday Monthly",
-    location: "Downtown Paradise",
-    image: "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=500",
-    participants: "50+",
+    title: 'Here are some sample questions',
+    date: 'Last Friday Monthly',
+    location: 'Koparion Book Shop',
+    image: 'https://gramentheme.com/html/bookle/assets/img/news/10.jpg',
+    participants: '50+',
     description:
-      "Experience the city lights on two wheels. A peaceful night ride through scenic routes.",
+      'What is the central thesis—or main argument—of the book? If the author wanted you to get one main idea from the book.',
   },
   {
     id: 3,
-    title: "Beginner's Workshop",
-    date: "Every Sunday",
-    location: "Pedal Paradise Store",
-    image: "https://images.unsplash.com/photo-1571188654248-7a89213915f7?w=500",
-    participants: "15",
+    title: 'Developing a Critical Assessment Strategy',
+    date: 'Koparion Book Shop',
+    location: 'Pedal Paradise Store',
+    image: 'https://gramentheme.com/html/bookle/assets/img/news/11.jpg',
+    participants: '15',
     description:
-      "Learn basic bicyclemaintenance and riding techniques from our experts.",
+      'There is no definitive methodological approach to writing a book review in the social sciences, although',
   },
   {
     id: 4,
-    title: "Annual Paradise Race",
-    date: "October 15, 2024",
-    location: "Paradise Valley Circuit",
-    image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=500",
-    participants: "100+",
+    title: 'There are two general approaches to a book',
+    date: 'October 15, 2024',
+    location: 'Koparion Book Shop',
+    image: 'https://gramentheme.com/html/bookle/assets/img/news/12.jpg',
+    participants: '100+',
     description:
-      "Our flagship racing event with categories for all skill levels. Great prizes to be won!",
+      'Presents the content and structure of a book as objectively as possible, describing essential information about a book!',
   },
-];
+]
 
 export default function Events() {
   return (
     <div className="py-16 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Upcoming Cycling Events
-          </h2>
+          <h2 className="text-4xl font-bold text-gray-900">Our Latest News</h2>
           <p className="mt-4 text-xl text-gray-600">
-            Join our community rides and activities
+            Long printed dress with thin adjustable straps. V-neckline and
+            wiring under the bust with ruffles at the bottom of the dress.
           </p>
         </div>
 
@@ -69,7 +68,7 @@ export default function Events() {
               transition={{ duration: 0.3 }}
               className="bg-white rounded-2xl shadow-xl overflow-hidden"
             >
-              <div className="relative h-48">
+              <div className="relative h-80">
                 <img
                   src={event.image}
                   alt={event.title}
@@ -113,5 +112,5 @@ export default function Events() {
         </div>
       </div>
     </div>
-  );
+  )
 }

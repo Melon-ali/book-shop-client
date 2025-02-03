@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import bgImage from '../../assets/images/5.webp'
 import banner from '../../assets/images/hero-book.png'
 import { Button } from 'antd'
+// fromer motion
+import { motion } from 'framer-motion'
+
+//variants
+import { fadeIn } from '../../../variants'
 
 export default function Banner() {
   // const contentStyle: React.CSSProperties = {
@@ -27,7 +32,13 @@ export default function Banner() {
       }}
     >
       <div className="container mx-auto px-4">
-        <div className="text-white ml-2 mt-24">
+        <motion.div
+          variants={fadeIn('down', 0.2)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="text-white ml-2 mt-24"
+        >
           <h1 className="text-5xl font-bold">
             Expand Your Mind <br />
             Reading a Book
@@ -40,7 +51,7 @@ export default function Banner() {
           <Link to={'all-products'}>
             <Button type="primary">Shop Now</Button>
           </Link>
-        </div>
+        </motion.div>
 
         <img
           className="w-1/2 sm:w-0 max-sm:w-0 md:w-0 lg:w-0 xl:w-1/2 "
