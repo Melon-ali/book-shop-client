@@ -1,6 +1,7 @@
 import Banner from "./Banner";
 import Events from "./Events";
 import Featured from "./Featured";
+import SeleOffer from "./SeleOffer";
 import Testimonial from "./Testimonial";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <div>
             <Banner />
             <Featured />
+            <SeleOffer />
             <Events />
             <Testimonial />
         </div>

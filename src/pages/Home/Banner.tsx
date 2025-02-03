@@ -54,7 +54,7 @@ export default function Banner() {
         </motion.div>
 
         <img
-          className="w-1/2 sm:w-0 max-sm:w-0 md:w-0 lg:w-0 xl:w-1/2 "
+          className="w-1/2 sm:w-0 max-sm:w-0 md:w-0 lg:w-1/2 xl:w-1/2 "
           src={banner}
           alt="Book Hero"
         />

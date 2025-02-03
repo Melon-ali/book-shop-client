@@ -29,8 +29,8 @@ const events = [
   {
     id: 3,
     title: 'Developing a Critical Assessment Strategy',
-    date: 'Koparion Book Shop',
-    location: 'Pedal Paradise Store',
+    date: 'November 21, 2024',
+    location: 'Koparion Book Shop',
     image: 'https://gramentheme.com/html/bookle/assets/img/news/11.jpg',
     participants: '15',
     description:

@@ -1,19 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Badge, Button, Card, Image, Tag, Typography } from "antd";
-import { TProduct } from "@/types";
-import { useNavigate } from "react-router-dom";
+import { Badge, Button, Card, Image, Tag, Typography } from 'antd'
+import { TProduct } from '@/types'
+import { useNavigate } from 'react-router-dom'
 
-import { motion } from "framer-motion";
-import { MdCompareArrows } from "react-icons/md";
+import { motion } from 'framer-motion'
+import { MdCompareArrows } from 'react-icons/md'
 
-const { Title } = Typography;
+const { Title } = Typography
 
 type ProductCardProps = {
-  product: TProduct;
-  management?: boolean;
-  compareItems?: TProduct[];
-  setCompareItems?: React.Dispatch<React.SetStateAction<TProduct[]>>;
-};
+  product: TProduct
+  management?: boolean
+  compareItems?: TProduct[]
+  setCompareItems?: React.Dispatch<React.SetStateAction<TProduct[]>>
+}
 
 const ProductCard = ({
   product,
@@ -21,15 +21,23 @@ const ProductCard = ({
   compareItems,
   setCompareItems,
 }: ProductCardProps) => {
-  const navigate = useNavigate();
-  const { name, price, image, description, _id, category, brand, quantity } =
-    product;
+  const navigate = useNavigate()
+  const {
+    name,
+    price,
+    image,
+    description,
+    _id,
+    category,
+    brand,
+    quantity,
+  } = product
 
   const handleAddToCompare = (product: TProduct) => {
     if (compareItems && compareItems.length < 3) {
-      setCompareItems?.([...compareItems, product]);
+      setCompareItems?.([...compareItems, product])
     }
-  };
+  }
 
   return (
     <motion.div
@@ -37,7 +45,7 @@ const ProductCard = ({
       transition={{ duration: 0.3 }}
       className=" rounded-2xl shadow-xl"
     >
-      <Badge.Ribbon text={`$${price}`} color="blue">
+      <Badge>
         <Card
           hoverable
           className="w-full sm:w-[300px] overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
@@ -59,8 +67,8 @@ const ProductCard = ({
             <Tag color="blue" className="">
               {brand.toLocaleUpperCase()}
             </Tag>
-            <Tag color={quantity > 0 ? "success" : "error"}>
-              {quantity > 0 ? "In Stock" : "Out of Stock"}
+            <Tag color={quantity > 0 ? 'success' : 'error'}>
+              {quantity > 0 ? 'In Stock' : 'Out of Stock'}
             </Tag>
           </div>
           <p
@@ -82,11 +90,16 @@ const ProductCard = ({
                 Compare
               </Button>
             )}
+            <div>
+              <i>
+                <p className="font-bold p-2 ml-8">$ Price: {price}</p>
+              </i>
+            </div>
           </div>
         </Card>
-      </Badge.Ribbon>
+      </Badge>
     </motion.div>
-  );
-};
+  )
+}
 
-export default ProductCard;
+export default ProductCard

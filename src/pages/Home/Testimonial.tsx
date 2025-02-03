@@ -4,27 +4,27 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    role: "Mountain Bicycle Enthusiast",
+    name: "James",
+    role: "Mountain Writing Enthusiast",
     image: "https://i.pravatar.cc/150?img=1",
     rating: 5,
-    text: "Pedal Paradise transformed my cycling experience! Their expert guidance helped me find the perfect mountain bicycle. The service is exceptional!",
+    text: "it will be important for your readers to know this. Keep in mind, though, that declarative statements in the chapters introducing the research problem.!",
   },
   {
     id: 2,
-    name: "Mike Chen",
-    role: "Professional Cyclist",
+    name: "Michael",
+    role: "Professional Author",
     image: "https://i.pravatar.cc/150?img=2",
     rating: 5,
-    text: "As a professional cyclist, I'm particular about my gear. Pedal Paradise consistently delivers quality bicycles and outstanding customer service.",
+    text: "Most critical book reviews examine a topic in relation to prior research. A good strategy for identifying this prior research is to examine sources the author(s) cite",
   },
   {
     id: 3,
-    name: "Emma Davis",
-    role: "Weekend Rider",
+    name: "David",
+    role: "Author Writing",
     image: "https://i.pravatar.cc/150?img=3",
     rating: 5,
-    text: "The team at Pedal Paradise made buying my first bicyclea wonderful experience. Their knowledge and patience are unmatched!",
+    text: "he Writing Center. University of North Carolina; Hartley, James. Reading and Writing Book Reviews Across the Disciplines. Journal of the American Society!",
   },
 ];
 
