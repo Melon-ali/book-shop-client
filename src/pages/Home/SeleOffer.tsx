@@ -16,17 +16,16 @@ const SeleOffer = () => {
   return (
     <div className="py-16 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div whileHover={{ y: -10 }}
-              transition={{ duration: 0.3 }}
+        <motion.div
+          whileHover={{ y: -10 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-12 w-full h-32 bg-no-repeat"
           style={{
             backgroundImage: `url(${bgImage})`,
           }}
         >
           <div className="w-96 text-white font-bold p-4">
-            <h2 className="text-xl">
-              G. Meyer Books & Spiritual Traveler
-            </h2>
+            <h2 className="text-xl">G. Meyer Books & Spiritual Traveler</h2>
             <h1 className="text-2xl ml-18"> Press Sale up to 30% off</h1>
           </div>
           <div></div>

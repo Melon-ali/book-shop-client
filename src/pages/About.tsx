@@ -1,4 +1,6 @@
 import { Typography, Row, Col, Card, Timeline, Space } from "antd";
+import bgImage from '../assets/images/hero2.png'
+import bannerImg from '../assets/images/banner2.jpg'
 import {
   ShopOutlined,
   TeamOutlined,
@@ -12,13 +14,17 @@ export default function About() {
   return (
     <div style={{ padding: "2rem" }}>
       <Row justify="center" style={{ marginBottom: "3rem" }}>
+        
         <Col>
           <Title className="text-center" level={1}>
-            Welcome to Pedal Paradise
+            Welcome to Koparion Book Shop
           </Title>
+          
           <Paragraph style={{ fontSize: "1.2rem", textAlign: "center" }}>
-            Your Premium Destination for All Things Bicycles Since 1995
+            Your Premium Destination for All Things Books!
           </Paragraph>
+          
+      <div className="md:w-full lg:w-full sm:w-full"><img className="rounded-md" src={bannerImg} alt="banner" /></div>
         </Col>
       </Row>
       <Row gutter={[24, 24]} justify="center">
@@ -27,8 +33,8 @@ export default function About() {
             <ShopOutlined style={{ fontSize: "2rem", color: "#1890ff" }} />
             <Title level={4}>Premium Selection</Title>
             <Paragraph style={{ height: "80px" }}>
-              Offering the finest collection of road, mountain, and urban
-              bicycles from top brands
+              Offering the finest collection of library, mountain, and urban
+              books from top author
             </Paragraph>
           </Card>
         </Col>
@@ -37,7 +43,7 @@ export default function About() {
             <TeamOutlined style={{ fontSize: "2rem", color: "#1890ff" }} />
             <Title level={4}>Expert Staff</Title>
             <Paragraph style={{ height: "80px" }}>
-              Our certified mechanics and sales team bring decades of cycling
+              Our certified category and sales team bring decades of cycling
               experience
             </Paragraph>
           </Card>
@@ -49,7 +55,7 @@ export default function About() {
             />
             <Title level={4}>Quality Service</Title>
             <Paragraph style={{ height: "80px" }}>
-              Professional maintenance, repairs, and customization services
+              Professional maintenance, delevery, and customization services
             </Paragraph>
           </Card>
         </Col>
@@ -62,11 +68,11 @@ export default function About() {
             items={[
               {
                 color: "green",
-                children: "1995 - Founded as a small repair shop",
+                children: "1995 - Founded as a small book shop",
               },
               {
                 color: "green",
-                children: "2000 - Expanded to full-service Pedal Paradise",
+                children: "2000 - Expanded to full-service koparion book",
               },
               {
                 color: "green",
@@ -82,31 +88,31 @@ export default function About() {
         </Col>
       </Row>
 
-      <Row justify="center" style={{ marginTop: "4rem" }}>
+      <Row justify="center" className="py-7 md:w-full lg:w-full sm:w-full rounded-md" style={{ marginTop: "4rem", backgroundImage: `url(${bgImage})` }}>
         <Col xs={24} md={16}>
-          <Card>
+          <>
             <Title level={2}>Why Choose Us?</Title>
             <Space direction="vertical" size="middle">
               <Paragraph>
                 <TrophyOutlined
                   style={{ color: "#1890ff", marginRight: "8px" }}
                 />
-                Voted Best Bicycle Shop 5 years in a row
+                Voted Best Book Shop 5 years in a row
               </Paragraph>
               <Paragraph>
                 <SafetyCertificateOutlined
                   style={{ color: "#1890ff", marginRight: "8px" }}
                 />
-                Lifetime free maintenance on all new bicycles
+                Lifetime free maintenance on all new books
               </Paragraph>
               <Paragraph>
                 <TeamOutlined
                   style={{ color: "#1890ff", marginRight: "8px" }}
                 />
-                Community rides and events every month
+                Community read and events every month
               </Paragraph>
             </Space>
-          </Card>
+          </>
         </Col>
       </Row>
     </div>

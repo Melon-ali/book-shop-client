@@ -23,7 +23,6 @@ const ProductCard = ({
   const navigate = useNavigate()
   const {
     name,
-    price,
     image,
     description,
     _id,
