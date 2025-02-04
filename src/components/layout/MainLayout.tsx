@@ -4,9 +4,9 @@ import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { logOut, useCurrentToken } from "../../redux/features/auth/authSlice";
-import EndFooter from "./endFooter";
 import logo from "../../assets/icons/icon.png";
 import Copyright from "./Copyright";
+import EndFooter from "./EndFooter";
 
 const MainLayout = () => {
   const token = useAppSelector(useCurrentToken);

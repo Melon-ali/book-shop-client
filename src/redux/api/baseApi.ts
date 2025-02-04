@@ -12,7 +12,7 @@ import { logOut, setUser } from "../features/auth/authSlice";
 import NotificationToast from "@/components/ui/NotificationToast";
 
 // const baseUrl = "http://localhost:5000/api/";
-const baseUrl = "https://pedal-paradise-server.vercel.app/api/";
+const baseUrl = "https://assignment-4-book-shop-server.vercel.app/api/";
 
 const baseQuery = fetchBaseQuery({
   baseUrl: baseUrl,

@@ -1,7 +1,6 @@
-const bicycleCategory = ["Mountain", "Road", "Hybrid", "Electric", "BMX"];
+const bookCategory = ["Design", "Development", "Frameworks", "DevOps", "Apps"];
 
-export const categoryOptions = bicycleCategory.map((item) => ({
-    label: item,
-    value: item,
-  }));
-  
+export const categoryOptions = bookCategory.map((item) => ({
+  label: item,
+  value: item,
+}));
