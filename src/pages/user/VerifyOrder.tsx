@@ -166,7 +166,7 @@ export default function VerifyOrder() {
           </CardHeader>
           <CardContent className="flex flex-col items-center gap-4">
             <QRCode value={window.location.href} size={200} />
-            <Link to={"/customer/order-history"}>
+            <Link to={"/customer/order"}>
               <Button type="primary">View Orders</Button>
             </Link>
           </CardContent>
