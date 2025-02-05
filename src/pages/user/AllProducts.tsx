@@ -1,6 +1,6 @@
 import {
   useGetAllProductsQuery,
-  useGetBrandsQuery,
+  useGetAuthorsQuery,
 } from "@/redux/features/admin/productManagement.api";
 import { TProduct, TQueryParams } from "@/types";
 import { useState } from "react";
@@ -45,11 +45,11 @@ export default function AllProducts() {
     ...params,
   ]);
 
-  const { data: brandsData } = useGetBrandsQuery({ skip: !isFetching });
+  const { data: authorsData } = useGetAuthorsQuery({ skip: !isFetching });
 
-  const brands = brandsData?.data.map((brand: string) => ({
-    value: brand,
-    label: brand,
+  const authors = authorsData?.data.map((author: string) => ({
+    value: author,
+    label: author,
   }));
 
   return (
@@ -231,22 +231,22 @@ export default function AllProducts() {
               </div>
             </div>
           </div>
-          {/* brand select  */}
+          {/* author select  */}
           <div>
-            <Typography.Text strong>Brand</Typography.Text>
+            <Typography.Text strong>Author</Typography.Text>
             <Select
               size="large"
-              placeholder="Select Brand..."
+              placeholder="Select Author..."
               className="w-full mt-2"
-              options={brands}
+              options={authors}
               allowClear
               loading={isFetching}
               onChange={(value) => {
                 if (value) {
                   const existingParams = params.filter(
-                    (param) => param.name !== "brand"
+                    (param) => param.name !== "author"
                   );
-                  setParams([...existingParams, { name: "brand", value }]);
+                  setParams([...existingParams, { name: "author", value }]);
                 } else {
                   setParams([]);
                 }

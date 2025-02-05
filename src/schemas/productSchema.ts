@@ -5,9 +5,9 @@ export const addProductSchema = z.object({
     required_error: "Name is required",
     invalid_type_error: "Name must be a string",
   }),
-  brand: z.string({
-    required_error: "Brand is required",
-    invalid_type_error: "Brand must be a string",
+  author: z.string({
+    required_error: "Author is required",
+    invalid_type_error: "Author must be a string",
   }),
   price: z
     .number({
@@ -43,9 +43,9 @@ export const editProductSchema = z.object({
     required_error: "Name is required",
     invalid_type_error: "Name must be a string",
   }),
-  brand: z.string({
-    required_error: "Brand is required",
-    invalid_type_error: "Brand must be a string",
+  author: z.string({
+    required_error: "Author is required",
+    invalid_type_error: "Author must be a string",
   }),
   price: z
     .number({

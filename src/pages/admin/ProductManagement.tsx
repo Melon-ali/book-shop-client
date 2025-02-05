@@ -76,9 +76,9 @@ export default function ProductManagement() {
       render: (text) => <p className="font-medium text-gray-700">{text}</p>,
     },
     {
-      title: "Brand",
-      dataIndex: "brand",
-      key: "brand",
+      title: "Author",
+      dataIndex: "author",
+      key: "author",
       render: (text) => <Tag color="purple">{text}</Tag>,
     },
     {
