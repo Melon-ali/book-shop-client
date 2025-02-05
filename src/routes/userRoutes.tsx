@@ -11,7 +11,7 @@ const userPaths: TUserPaths[] = [
   },
   {
     name: "My Orders",
-    path: "order-history",
+    path: "order",
     element: <OrderHistory />,
   }
 ];

@@ -63,7 +63,7 @@ export default function ProductManagement() {
     name: product.name,
     price: product.price,
     category: product.category,
-    brand: product.brand,
+    author: product.author,
     quantity: product.quantity,
     image: product.image,
     description: product.description,

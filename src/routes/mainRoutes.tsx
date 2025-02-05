@@ -51,7 +51,7 @@ const mainRoutes: TUserPaths[] = [
   },
   {
     name: "Verify Order",
-    path: "verify-order",
+    path: "verify",
     element: (
       <ProtectedRoute role="customer">
         <VerifyOrder />,
