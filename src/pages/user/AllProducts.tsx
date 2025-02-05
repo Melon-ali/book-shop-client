@@ -320,7 +320,7 @@ export default function AllProducts() {
       <Drawer
         title={
           <div className="flex justify-between items-center">
-            <span>Compare Bicycles</span>
+            <span>Compare Books</span>
             <Button danger onClick={() => setCompareItems([])}>
               Clear All
             </Button>
@@ -353,8 +353,8 @@ export default function AllProducts() {
               render: (price) => <Tag color="green">${price}</Tag>,
             },
             {
-              title: "Brand",
-              dataIndex: "brand",
+              title: "Author",
+              dataIndex: "author",
             },
             {
               title: "Category",

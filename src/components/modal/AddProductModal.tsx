@@ -92,10 +92,10 @@ const AddProductModal: React.FC = () => {
             </Col>
             <Col span={12}>
               <CustomInput
-                name="brand"
-                label="Brand"
+                name="author"
+                label="Author"
                 type="text"
-                placeholder="Enter brand name"
+                placeholder="Enter Author name"
               />
             </Col>
           </Row>

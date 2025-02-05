@@ -113,10 +113,10 @@ export default function EditProductModal({
             </Col>
             <Col span={12}>
               <CustomInput
-                name="brand"
-                label="Brand"
+                name="author"
+                label="author"
                 type="text"
-                placeholder="Enter brand name"
+                placeholder="Enter Author Name"
               />
             </Col>
           </Row>

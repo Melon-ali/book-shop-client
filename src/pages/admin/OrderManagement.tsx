@@ -265,7 +265,7 @@ export default function OrderManagement() {
             Order Management
           </h1>
           <p className="text-center text-gray-500 mt-2">
-            Manage and track all customer orders
+            Manage All Customer Orders
           </p>
         </div>
 

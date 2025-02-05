@@ -118,7 +118,7 @@ export default function Checkout() {
                 type="text"
                 readonly
                 name="name"
-                label="Name of Bicycle"
+                label="Name of Book"
               />
             </Col>
             <Col span={12}>
