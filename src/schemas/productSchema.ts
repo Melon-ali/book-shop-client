@@ -15,10 +15,10 @@ export const addProductSchema = z.object({
       invalid_type_error: "Price must be a positive number",
     })
     .positive("Price must be a positive number"),
-  category: z.enum(["Mountain", "Road", "Hybrid", "BMX", "Electric"], {
+  category: z.enum(['Design', 'Development', 'Frameworks', 'DevOps', 'Apps'], {
     required_error: "Category is required",
     invalid_type_error:
-      "Category must be one of Mountain, Road, Hybrid, BMX, or Electric",
+      "Category must be one of Design, Development, Frameworks, DevOps, Apps",
   }),
   description: z.string({
     required_error: "Description is required",
@@ -53,10 +53,10 @@ export const editProductSchema = z.object({
       invalid_type_error: "Price must be a positive number",
     })
     .positive("Price must be a positive number"),
-  category: z.enum(["Mountain", "Road", "Hybrid", "BMX", "Electric"], {
+  category: z.enum(['Design', 'Development', 'Frameworks', 'DevOps', 'Apps'], {
     required_error: "Category is required",
     invalid_type_error:
-      "Category must be one of Mountain, Road, Hybrid, BMX, or Electric",
+      "Category must be one of Design, Development, Frameworks, DevOps, Apps",
   }),
   description: z.string({
     required_error: "Description is required",
