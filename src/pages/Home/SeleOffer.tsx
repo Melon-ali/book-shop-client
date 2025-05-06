@@ -24,7 +24,7 @@ const SeleOffer = () => {
             backgroundImage: `url(${bgImage})`,
           }}
         >
-          <div className="w-96 text-white font-bold p-4">
+          <div className="w-96 text-white font-bold p-4 mt-24">
             <h2 className="text-xl">G. Meyer Books & Spiritual Traveler</h2>
             <h1 className="text-2xl ml-18"> Press Sale up to 30% off</h1>
           </div>

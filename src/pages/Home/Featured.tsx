@@ -9,7 +9,7 @@ export default function Featured() {
   const featuredProducts = productsData?.data?.slice(0, 4);
   return (
     <div className="relative font-[Manrope] before:fixed before:left-0 before:top-0 before:-z-10 before:h-[435px] before:w-full before:rounded-bl-3xl before:bg-[#EAE6D7] max-md:px-4 lg:text-lg before:lg:rounded-bl-[79px]">
-      <h1 className="text-center text-4xl mt-10 mb-10 font-bold">
+      <h1 className="text-center text-4xl mt-24 mb-10 font-bold">
         Featured Books
       </h1>
       {isFetching ? (

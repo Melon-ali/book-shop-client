@@ -50,9 +50,9 @@ const events = [
 
 export default function Events() {
   return (
-    <div className="py-16 ">
+    <div className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-24">
           <h2 className="text-4xl font-bold text-gray-900">Our Latest News</h2>
           <p className="mt-4 text-xl text-gray-600">
             Long printed dress with thin adjustable straps. V-neckline and
